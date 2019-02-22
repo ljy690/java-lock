@@ -14,7 +14,7 @@ public class PessimisticLock {
         //同步资源的一系列操作
     }
 
-    //可重入锁，保证多个线程用的是一个锁
+    //可重入锁，保证多个线程用的是一个锁，默认是非公平锁
     private ReentrantLock reentrantLock = new ReentrantLock();
 
     /**
